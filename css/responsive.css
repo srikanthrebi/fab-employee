@@ -1,0 +1,110 @@
+@media(min-width:576px){
+     .container{
+        width: 100%;
+     }
+    .navbar-nav{
+        flex-direction: row !important;
+    }
+  
+   
+}
+@media(max-width:576px){
+    .container{
+        width: 100%;
+    }
+    .navbar-nav{
+        flex-direction: row !important;
+    }
+    /* .left-side{
+        padding-left: 0px;
+    } */
+     .navbar-brand{
+        display: block;
+        width: 30px;
+        overflow: hidden;
+    }
+    .social-media{
+        justify-content: center !important;
+        padding-bottom: 15px;
+    }
+}
+@media(min-width:768px) and (max-width:992px){
+    .container{
+        width: 765px !important;
+    }
+    .navbar-nav{
+        flex-direction: row;
+    }
+    .navbar-nav .nav-link{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    /* .navbar-nav .dropdown-menu{
+        inset: initial !important;
+        top: 0 !important;
+    } */
+    .side-bar{
+        height: auto;
+    }
+    .left-side{
+        padding-left: 20px;
+    }
+    .main-bar{
+        width: 300px;
+        position: fixed;
+        top: 40px;
+        left: -295px;
+        height: auto;
+        transition: all 0.5s ease;
+    }
+    .main-bar .icon{
+        width: 60px;
+        height: 60px;
+        background-color: #fff;
+        box-shadow: 0 0 5px #ccc;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        position: absolute;
+        top: 20px;
+        right: -40px;
+        line-height: 60px;
+        text-align: center;
+        font-size: 30px;
+        color: #670099;
+        cursor: pointer;
+    }
+    .main-bar.active{
+        left: -12px;
+    }
+    .icon i{
+        display: none;
+    }
+    .icon i.active{
+        display: inline-block;
+    }
+}
+@media(min-width:992px){
+    .container{
+        width: 990px !important;
+    }
+    .mb-menu{
+        display: none;
+    }
+    .side-bar{
+        height: 100vh;
+    }
+    /* .main-bar{
+        position: relative;
+        left: 0;
+        width: none;
+    } */
+   
+}
+@media(min-width:1200px){
+    .container{
+        width: 1170px !important;
+    }
+    .navbar-nav{
+        flex-direction: row;
+    }
+}
